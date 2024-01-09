@@ -1,7 +1,7 @@
 import Logo from "../../assets/logo.png";
 import { sidePanelLinks } from "../../data/SidePanelLinks";
 import Icon from "../Icon/Icon";
-import "./SidePanel.css"
+import "./Sidepanel.css"
 
 // eslint-disable-next-line react/prop-types
 function SidePanel({ sidePanelActive }) {
