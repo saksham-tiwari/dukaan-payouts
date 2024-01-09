@@ -1,0 +1,127 @@
+aside {
+    position: sticky;
+    height: 100dvh;
+    color: #ccc;
+    inset: 0;
+    width: 224px;
+    background-color: #1e2640;
+    font-family: sans-serif;
+  }
+  .SidePanel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .logo img {
+    height: 39px;
+    width: 39px;
+    border-radius: 4px;
+  }
+  
+  .info h5 {
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .SidePanelProfile {
+    padding: 16px 16px 20px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .SidePanelProfileFlex {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .info p {
+    font-size: 13px;
+    text-decoration: underline;
+    color: #ccc;
+  }
+  
+  .info p:hover {
+    color: white;
+  }
+  
+  .SidePanelItemList {
+    padding: 8px;
+    list-style: none;
+    flex: 1;
+    /* border: 1px solid red; */
+  }
+  
+  .SidePanelItem {
+    border-radius: 4px;
+    display: flex;
+    padding: 8px 16px;
+    font-size: 14px;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .SidePanelItem:hover {
+    cursor: pointer;
+    background-color: #ffffff0d;
+  }
+  .ActiveSidePanelItem {
+    border-radius: 4px;
+    display: flex;
+    padding: 8px 16px;
+    font-size: 14px;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 5px;
+    background-color: #ffffff0d;
+    color: white;
+  }
+  
+  .SidePanelBottonItem {
+    background-color: #353C53;
+    margin: auto 16px;
+    padding: 6px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .SidePanelWallet {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .SidePanelWallet h6 {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .SidePanelWallet p {
+    font-weight: 500px;
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 1036px) {
+    .SidePanelMain {
+      position: fixed;
+      left: -224px;
+      transition: left 0.3s ease;
+      z-index: 100; /* Ensure it's above other content */
+    }
+  
+    .SidePanelMain.active {
+      left: 0;
+    }
+  }
+  
+  /* Desktop view */
+  @media screen and (min-width: 1037px) {
+    .SidePanelMain {
+      position: sticky;
+      left: 0;
+    }
+  }

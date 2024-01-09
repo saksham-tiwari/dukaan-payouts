@@ -1,0 +1,133 @@
+.RightSection {
+    flex: 1 1 0;
+    overflow: auto;
+    background-color: #f7f7f7;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content:space-between;
+    padding: 12px 32px;
+    gap:16px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    /* border: 1px solid #000; */
+  }
+  .NavFlex1HIW {
+    display: flex;
+    gap: 6px;
+    font-size: 14px;
+    color: #71717a;
+    cursor: pointer;
+  }
+  .NavFlex1HIW p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .NavFlex1 {
+    width: 360px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .NavFlex1Title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .NavFlex1Question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .searchBox {
+    background-color: #F2F2F2;
+    color: #71717a;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 9px 16px;
+    gap: 8px;
+  }
+  .searchBox input {
+    outline: none;
+    border: none;
+    background-color: #F2F2F2;
+    font-family: Inter, sans-serif;
+    width: 100%;
+  }
+  .searchBox input::placeholder {
+    color: #808080;
+  }
+  
+  .NavFlex3 {
+    /* border: 1px solid #000; */
+    width: 360px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+  
+  }
+  .NavFlex3 div {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background: #dfdddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #3f3f46;
+  }
+  .NavFlex3ChevIcon{
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .HamburgerMenu {
+    display: none;
+  }
+  @media screen and (max-width: 1036px) {
+    .navbar {
+      justify-content: space-between;
+      padding: 12px 16px;
+    }
+  
+    .NavFlex1, .NavFlex2, .NavFlex3 {
+      display: none; /* Hide all navbar content initially */
+    }
+  
+    .NavFlex1 {
+      display: flex; /* Only show the payouts heading */
+    }
+  
+    .HamburgerMenu {
+      display: flex; /* Show hamburger menu */
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+    }
+  
+    /* Styles for when the hamburger menu is active/open */
+    .HamburgerMenu.active + .nav-content {
+      display: flex; /* Show other navbar content in a side menu */
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      border-bottom: 1px solid #ccc;
+      z-index: 1000;
+    }
+  }
+  

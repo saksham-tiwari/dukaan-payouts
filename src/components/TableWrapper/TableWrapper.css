@@ -1,0 +1,98 @@
+.TableWrapper {
+  padding: 0px 32px;
+}
+.TableHeader{
+  font-size: 20px;
+  font-weight: 500;
+}
+.TableContainer {
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 6px;
+    padding: 8px 10px;
+    overflow-x: auto;
+  }
+  @media (max-width: 768px) {
+    .TableMain {
+      width: auto;
+    }
+  
+    table {
+      white-space: nowrap; 
+    }
+  }
+  .TableHeadRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .TableWrapperButtons {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  .TableWrapperPayoutBtn {
+    border: none;
+    padding: 6px 16px;
+    gap:10px;
+    font-size: 14px;
+    border-radius: 40px;
+    background-color: #E6E6E6;
+    color: #808080;
+  }
+  .TableWrapperRefundBtn {
+    border: none;
+    padding: 6px 16px;
+    gap:10px;
+    font-size: 14px;
+    border-radius: 40px;
+    color: #fff;
+    background-color: #146eb4;
+  }
+  .TableHeadSearch {
+    padding: 6px 8px 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    width: 240px;
+    color: #71717a;
+  }
+  
+  .TableHeadSearch input {
+    padding: 4px 0;
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+  
+  .TableHeadSearch input::placeholder {
+    color: #999999;
+  }
+  .TableHeadSortFilter {
+    color:"#4D4D4D";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  
+  .TableHeadFilters {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .TableHeadFilters>div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #3f3f46;
+  }

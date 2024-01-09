@@ -1,0 +1,111 @@
+.ActiveOverviewWidget {
+    padding: 24px 0 0;
+    background: #146eb4;
+    color: white;
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: fit-content;
+    box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
+
+  }
+  
+  .ActiveOverviewWidget .WidgetAmount,
+  .ActiveOverviewWidget .WidgetTitle {
+    padding: 0 20px;
+  }
+  
+  .ActiveOverviewWidget .WidgetTitle {
+    display: flex;
+    gap: 6px;
+    font-weight: 300;
+    align-items: center;
+  }
+  .ActiveOverviewWidget .WidgetAmount {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .ActiveOverviewWidget .WidgetAmount .Amount {
+    font-size: 28px;
+    font-weight: 500;
+    color:#fff
+  }
+  .ActiveOverviewWidget .WidgetAmount .SecondaryClick {
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .ActiveOverviewWidget .orders {
+    color:#fff;
+    text-decoration: underline;
+    line-height: 18px;
+  }
+  .SubSection {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 8px;
+    background-color: #0e4f82;
+  }
+  .OverviewWidget {
+    padding: 24px 20px;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: fit-content;
+    position: relative;
+    box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
+  }
+  
+  .WidgetTitle {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    color: #3f3f46;
+  }
+  .ActiveOverviewWidget .WidgetTitle p{
+    color: #fff;
+  }
+  .WidgetAmount {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .WidgetAmount p {
+    color:#4D4D4D;
+  }
+  .Amount {
+    font-size: 28px;
+    font-weight: 500;
+    color:#1A181E;
+  }
+  .WidgetChevronIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .SecondaryClick {
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .SecondaryClick .activeOrders {
+    text-decoration: underline;
+    color: #146eb4;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  
+  }  
